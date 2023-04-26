@@ -25,19 +25,7 @@ const DefaultStyledButton = styled.button.attrs((props) => ({
 `;
 
 const StyledButton = styled(DefaultStyledButton)`
-	color: ${(props) => props.theme.color};
-	background-color: ${(props) => props.theme.backgroundColor};
-	border-color: ${(props) => props.theme.borderColor};
-	padding: ${(props) => props.theme.padding};
-	font-size: ${(props) => props.theme.fontSize};
-	border-radius: ${(props) => props.theme.borderRadius};
-
-	&:hover {
-		${(props) => !props.isDisabled && props.theme.hover}
-	}
-	&:active {
-		${(props) => props.isActive && props.theme.active}
-	}
+	${(props) => props.theme}
 `;
 
 export { StyledButton };
