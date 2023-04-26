@@ -7,12 +7,8 @@ import { variantSettings } from './theme';
 const Button = (props) => {
 	const { variant, children, size, disabled = false, active = false } = props;
 	return (
-		<ThemeProvider
-			theme={{
-				...variantSettings[variant],
-				...variantSettings[size],
-			}}>
-			<StyledButton isDisabled={disabled} isActive={active}>
+		<ThemeProvider theme={variantSettings}>
+			<StyledButton isDisabled={disabled} isActive={active} variant={variant}>
 				{children}
 			</StyledButton>
 		</ThemeProvider>

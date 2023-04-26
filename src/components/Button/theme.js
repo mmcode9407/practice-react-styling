@@ -5,7 +5,7 @@ export const variantSettings = {
 		color: #fff;
 		background-color: #007bff;
 		border-color: #007bff;
-		&:hover: {
+		&:hover {
 			background-color: #0069d9;
 			border-color: #0062cc;
 		}

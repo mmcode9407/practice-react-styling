@@ -25,7 +25,7 @@ const DefaultStyledButton = styled.button.attrs((props) => ({
 `;
 
 const StyledButton = styled(DefaultStyledButton)`
-	${(props) => props.theme}
+	${({ theme, variant }) => theme[variant]}
 `;
 
 export { StyledButton };
