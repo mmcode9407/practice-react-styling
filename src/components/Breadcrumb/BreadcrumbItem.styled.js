@@ -10,4 +10,13 @@ const StyledBreadcrumbItem = styled.li`
 	}
 `;
 
-export default StyledBreadcrumbItem;
+const StyledLink = styled.a`
+	&:not([href]) {
+		color: ${(props) => (props.isActive ? '#6c757d' : '#007bff')};
+		&:hover {
+			color: ${(props) => (props.isActive ? '#6c757d' : '#007bff')};
+		}
+	}
+`;
+
+export { StyledBreadcrumbItem, StyledLink };

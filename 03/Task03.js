@@ -21,7 +21,7 @@ const Task03 = () => {
 					<BreadcrumbItem href='https://getbootstrap.com/docs/4.0/components/breadcrumb/'>
 						Library
 					</BreadcrumbItem>
-					<BreadcrumbItem active>Data</BreadcrumbItem>
+					<BreadcrumbItem isActive='true'>Data</BreadcrumbItem>
 				</Breadcrumb>
 			</Col>
 		</Row>

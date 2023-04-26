@@ -1,13 +1,13 @@
 ﻿import React from 'react';
-import StyledBreadcrumbItem from './BreadcrumbItem.styled';
+import { StyledBreadcrumbItem, StyledLink } from './BreadcrumbItem.styled';
 
 const BreadcrumbItem = (props) => {
-	const { href = null, active = false, children } = props;
+	const { href = null, isActive = false, children } = props;
 	return (
 		<StyledBreadcrumbItem>
-			<a href={href} active={active}>
+			<StyledLink href={href} isActive={isActive}>
 				{children}
-			</a>
+			</StyledLink>
 		</StyledBreadcrumbItem>
 	);
 };
